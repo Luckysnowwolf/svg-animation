@@ -95,3 +95,7 @@ p{
     animation-direction: reverse;
     animation-fill-mode: none;
 }
+.svg{
+    display: flex;
+    margin-left: 90px;
+}
