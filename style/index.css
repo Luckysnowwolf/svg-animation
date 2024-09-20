@@ -69,21 +69,29 @@ p{
     transition-delay: 0.3s;
 }
 @keyframes imgzoom{
- {transform: scale(1) rotate(0deg);}
- {transform:scale(1.1) rotate(15deg);}
+ 0%  {
+    transform: scale(1) rotate(0deg);
+}
+
+ 100% {
+    transform:scale(1.1) rotate(15deg);
+}
 }
 .G-wolf{
     display: flex;
-    animation: 3.5 ease infinite;
+    animation: imgzoom 1.5s;
     animation-direction: reverse;
     animation-fill-mode: none;
 }
-.G-wolf:hover{
-    animation-play-state: paused;
-}
 .B-wolf{
     display: flex;
+    animation: imgzoom 3.5s;
+    animation-direction: reverse;
+    animation-fill-mode: none;
 }
 .A-wolf{
-display: flex;
+    display: flex;
+    animation: imgzoom 5.5s;
+    animation-direction: reverse;
+    animation-fill-mode: none;
 }
